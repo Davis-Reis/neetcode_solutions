@@ -1,6 +1,7 @@
 #include <vector>
-#include <unordered_map>
-using namespace stf;
+#include <unordered_set>
+#include <iostream>
+using namespace std;
 
 class Solution {
     public:
@@ -65,3 +66,16 @@ class Solution {
             return result;
         }
 };
+
+main() {
+    int numCourses;
+    cin >> numCourses;
+
+    <vector<vector<int>> prereqs;
+    int a, b;
+    while (cin >> a >> b) {
+        prereq.push_back({a, b});
+    }
+
+    cout << findOrder(numCourses, prereqs);
+}
