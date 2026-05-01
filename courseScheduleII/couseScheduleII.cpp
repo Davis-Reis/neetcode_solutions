@@ -67,15 +67,22 @@ class Solution {
         }
 };
 
-main() {
+int main() {
+    Solution sol;
     int numCourses;
     cin >> numCourses;
 
-    <vector<vector<int>> prereqs;
+    vector<vector<int>> prereqs;
     int a, b;
     while (cin >> a >> b) {
-        prereq.push_back({a, b});
+        prereqs.push_back({a, b});
     }
 
-    cout << findOrder(numCourses, prereqs);
+    vector<int> output = sol.findOrder(numCourses, prereqs);
+
+    for (const auto& i : output) {
+        cout << i << ' ';
+    }
+    cout << '\n';
+    return 0;
 }
